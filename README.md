@@ -10,10 +10,11 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
 
 #REQUIRENMENTS
 sudo apt-get install gpsd gpsd-clients
+sudo apt-get install gps3
 
 #CRONTAB um beim start zu
 crontab -e
-@reboot python /home/lukasweibel/Documents/blink.py
+@reboot python /home/lukasweibel/Documents/wlan_gps_status.py
 
 @reboot rm -rf repository-name
 @reboot git clone https://github.com/username/repository-name

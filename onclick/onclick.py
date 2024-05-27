@@ -13,7 +13,7 @@ def clicked():
         print("Your position: lon = " + str(longitude) + ", lat = " + str(latitude))
         url = 'https://lens-less.azurewebsites.net/data'
         temperature = sense.get_temperature() -15
-        myobj = {"latitude": latitude, "longitude":longitude,"temperature":temperature}
+        myobj = {"latitude": latitude, "longitude":longitude,"temperature":temperature,"prompt":"Create an Image of the eifeltower, you are standing in front of it and its summer."}
         x = requests.post(url, json = myobj)
         if x.status_code == 200:
             response_data = x.json()

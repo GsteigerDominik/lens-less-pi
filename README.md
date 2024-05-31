@@ -3,8 +3,6 @@ Lens-less Code that runs on the rasperry pi
 
 #GPS Module
 https://wiki.dfrobot.com/USB_GPS_Receiver_SKU_TEL0137
-
-
 https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
 
 
@@ -12,9 +10,6 @@ https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-ra
 sudo apt-get install gpsd gpsd-clients
 sudo apt-get install gps3
 
-#CRONTAB um beim start zu
+#CRONTAB um beim start_up zu starten
 crontab -e
 @reboot python /home/lukasweibel/Documents/wlan_gps_status.py
-
-@reboot rm -rf repository-name
-@reboot git clone https://github.com/username/repository-name

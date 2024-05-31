@@ -2,8 +2,8 @@
   "latitude": float,
   "longitude": float,
   "temperature": float,
-  "brightness": number(0-5),
-  "population": number(0-5),
+  "brightness": number(0-6),
+  "population": number(0-6),
   "colorscheme": "string(blackwhite,colourfull)",
   "style": "string(realistic,futuristic,vintage,drawing)"
 }

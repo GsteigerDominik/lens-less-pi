@@ -27,17 +27,6 @@ MAIN = [
     e, e, e, e, e, e, e, e
 ]
 
-BRIGHTNESS = [
-    e, e, e, e, e, e, e, e,
-    e, e, e, y, y, e, e, e,
-    e, e, e, g, g, e, e, e,
-    r, e, e, g, g, e, e, r,
-    r, e, e, g, g, e, e, r,
-    b, b, b, b, b, b, b, b,
-    b, y, y, e, e, e, e, b,
-    b, b, b, b, b, b, b, b
-]
-
 ERROR = [
     r, r, r, r, r, r, r, r,
     r, r, r, r, r, r, r, r,

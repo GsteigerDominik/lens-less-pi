@@ -28,6 +28,8 @@ crontab -e
 
 @reboot python /home/lukasweibel/Documents/lens-less-pi/src/wlan_gps_status.py
 @reboot python /home/lukasweibel/Documents/lens-less-pi/src/main.py
+
+sudo reboot
 ```
 #CRONTAB um beim start_up zu starten
 

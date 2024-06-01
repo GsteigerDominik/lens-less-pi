@@ -6,12 +6,12 @@ gpsd = gps(mode=WATCH_ENABLE | WATCH_NEWSTYLE)
 
 def send_request(temperature, brightness, population, colorscheme,style):
     nx={}
-    for i in range(0,10):
+    for i in range(0,20):
         nx = gpsd.next()
         if nx['class'] == 'TPV':
             break
-    latitude = getattr(nx, 'lat', "Unknown")
-    longitude = getattr(nx, 'lon', "Unknown")
+    latitude = getattr(nx, 'lat', 0)
+    longitude = getattr(nx, 'lon', 0)
     print("current position",latitude,longitude)
     url = 'https://lens-less.azurewebsites.net/data'
     temperature = temperature - 15

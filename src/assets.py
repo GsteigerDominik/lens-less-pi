@@ -1,3 +1,4 @@
+# COLORS
 r = (255, 0, 0)
 g = (0, 255, 0)
 b = (0, 0, 255)
@@ -6,16 +7,8 @@ y = (255, 255, 0)
 w = (255, 255, 255)
 br = (66, 40, 14)
 gr = (102, 102, 102)
-logo = [
-    e, e, e, e, e, e, e, e,
-    e, e, e, e, e, e, e, e,
-    r, g, g, g, g, r, e, e,
-    r, e, e, e, e, r, e, e,
-    r, e, g, g, e, r, e, e,
-    r, e, e, e, e, r, e, e,
-    r, r, r, g, g, r, r, r,
-    e, e, e, e, e, e, e, e
-]
+
+# STATIC PAGES
 MAIN = [
     e, e, e, e, e, e, e, e,
     e, b, b, b, b, b, b, e,
@@ -50,12 +43,14 @@ LOADING = [
 ]
 
 
+# HELPER METHOD
 def x(idx, current_nr, color):
     if idx <= current_nr:
         return color
     return e
 
 
+# DYNAMIC PAGES
 def led_brightness(i):
     return [
         e, e, e, e, e, e, e, e,

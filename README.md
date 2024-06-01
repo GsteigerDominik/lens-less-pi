@@ -1,15 +1,38 @@
 # lens-less-pi
 Lens-less Code that runs on the rasperry pi
 
-#GPS Module
-https://wiki.dfrobot.com/USB_GPS_Receiver_SKU_TEL0137
-https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi
+## Connect on PI
+1. Go into same WLAN as the PI. If the PI Top left led blinks red, he has wlan.
+2. Connect through SSH:
+```
+ssh lukasweibel@iot-fbg.local 
+```
+3. Enter password
 
-
-#REQUIRENMENTS
+## SetUp
+1. Git Clone Repository :
+```
+cd Documents/
+git clone https://github.com/GsteigerDominik/lens-less-pi.git
+```
+2. Install GPSD Requirements
+```
+cd lens-less-pi/
 sudo apt-get install gpsd gpsd-clients
 sudo apt-get install gps3
+```
 
-#CRONTAB um beim start_up zu starten
+3. Autostart configs hinterlegen
+```
 crontab -e
-@reboot python /home/lukasweibel/Documents/wlan_gps_status.py
+
+@reboot python /home/lukasweibel/Documents/lens-less-pi/src/wlan_gps_status.py
+@reboot python /home/lukasweibel/Documents/lens-less-pi/src/main.py
+```
+#CRONTAB um beim start_up zu starten
+
+
+
+## References
+1. GPS Module: https://wiki.dfrobot.com/USB_GPS_Receiver_SKU_TEL0137
+2. GPS Setup: https://maker.pro/raspberry-pi/tutorial/how-to-read-gps-data-with-python-on-a-raspberry-pi

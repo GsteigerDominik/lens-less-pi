@@ -17,7 +17,7 @@ git clone https://github.com/GsteigerDominik/lens-less-pi.git
 ```
 2. Install GPSD Requirements
 ```
-cd lens-less-pi/
+cd lens-less-pi/src/
 sudo apt-get install gpsd gpsd-clients
 sudo apt-get install gps3
 ```
@@ -31,7 +31,6 @@ crontab -e
 
 sudo reboot
 ```
-#CRONTAB um beim start_up zu starten
 
 
 

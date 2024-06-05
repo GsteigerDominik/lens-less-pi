@@ -15,7 +15,6 @@ def send_request(temperature, brightness, population, colorscheme, style):
             longitude = getattr(nx, 'lon', 0)
             if latitude != 0 and longitude != 0:
                 break
-    print("current position", latitude, longitude)
     url = 'https://lens-less.azurewebsites.net/data'
     temperature = temperature - 15
     myobj = {

@@ -101,7 +101,6 @@ class Menu:
                                           style_map[STATE_TO_VALUE[State.STYLE]]
                                           )
                 STATE_TO_VALUE[State.RESULT] = picture_id
-                print(picture_id)
             else:
                 self.show_error()
             self.current_state = State.RESULT

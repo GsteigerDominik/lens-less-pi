@@ -32,7 +32,17 @@ crontab -e
 sudo reboot
 ```
 
-
+## API Definition
+```
+{
+  "latitude": float,
+  "longitude": float,
+  "temperature": float,
+  "brightness": number(0-6),
+  "population": number(0-6),
+  "colorscheme": "string(blackwhite,colourfull)",
+  "style": "string(realistic,futuristic,vintage,drawing)"
+}```
 
 ## References
 1. GPS Module: https://wiki.dfrobot.com/USB_GPS_Receiver_SKU_TEL0137
